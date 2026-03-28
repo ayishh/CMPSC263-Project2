@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Tic Tac Toe</h1>
+      <p class="status" id="status" aria-live="polite">Player X's turn</p>
+    </header>
+
+    <div class="board-wrap">
+      <div class="board" id="board" role="grid" aria-label="Tic tac toe board">
+        <button type="button" class="cell" data-index="0" aria-label="Cell 1 empty"></button>
+        <button type="button" class="cell" data-index="1" aria-label="Cell 2 empty"></button>
+        <button type="button" class="cell" data-index="2" aria-label="Cell 3 empty"></button>
+        <button type="button" class="cell" data-index="3" aria-label="Cell 4 empty"></button>
+        <button type="button" class="cell" data-index="4" aria-label="Cell 5 empty"></button>
+        <button type="button" class="cell" data-index="5" aria-label="Cell 6 empty"></button>
+        <button type="button" class="cell" data-index="6" aria-label="Cell 7 empty"></button>
+        <button type="button" class="cell" data-index="7" aria-label="Cell 8 empty"></button>
+        <button type="button" class="cell" data-index="8" aria-label="Cell 9 empty"></button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <button type="button" class="btn-reset" id="reset">New game</button>
+    </footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

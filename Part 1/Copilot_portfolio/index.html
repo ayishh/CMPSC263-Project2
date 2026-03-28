@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copilot Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Copilot Portfolio</div>
+    <nav class="site-nav" id="siteNav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Web Developer & Designer</p>
+        <h1>Hi, I’m Copilot.</h1>
+        <p>I create modern, responsive websites with clean code and thoughtful design.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="button primary">View Projects</a>
+          <a href="#contact" class="button secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="device-mockup">
+          <div class="screen">Portfolio</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading">
+        <h2>About Me</h2>
+        <p>I build user-friendly interfaces and bring creative ideas to life on the web.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Experience</h3>
+          <p>Several web projects delivered with HTML, CSS, JavaScript, and responsive design.</p>
+        </article>
+        <article class="card">
+          <h3>Skills</h3>
+          <p>Responsive design, accessibility, animations, and modern JavaScript interactions.</p>
+        </article>
+        <article class="card">
+          <h3>Approach</h3>
+          <p>I focus on clarity, performance, and polished visual presentation for every site.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p>A selection of web projects showing design and development work.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A clean portfolio layout with interactive navigation and responsive sections.</p>
+        </article>
+        <article class="project-card">
+          <h3>To-Do App</h3>
+          <p>A JavaScript-based app for tracking tasks with modern styling and state management.</p>
+        </article>
+        <article class="project-card">
+          <h3>Tic Tac Toe</h3>
+          <p>A responsive game built with HTML, CSS, and JS, now upgraded with computer opponent mode.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p>Ready to build something together? Send a message and let’s connect.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>
+          Name
+          <input type="text" id="nameInput" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="emailInput" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Message
+          <textarea id="messageInput" rows="4" placeholder="Your message" required></textarea>
+        </label>
+        <button type="submit" class="button primary">Send Message</button>
+        <p class="success-message" id="successMessage">Thanks! Your message has been received.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Copilot Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

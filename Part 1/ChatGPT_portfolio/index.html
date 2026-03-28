@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daniel Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h2 class="logo">Daniel</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section">
+    <h1>Hello, I'm Daniel 👋</h1>
+    <p>Web Developer | Student | Builder</p>
+    <button onclick="scrollToSection('projects')">View Projects</button>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>POS System (JUAL)</h3>
+        <p>Next.js + Firebase POS system with receipts and QR.</p>
+      </div>
+
+      <div class="card">
+        <h3>Automation Framework</h3>
+        <p>Reduced testing time by 80% using reusable scripts.</p>
+      </div>
+
+      <div class="card">
+        <h3>Flask App</h3>
+        <p>Patient management system with SQLite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: daniel@email.com</p>
+    <button onclick="showAlert()">Say Hi</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
